@@ -16,6 +16,9 @@ const App = () => {
         id={index}
         cell={cell}
         setCells={setCells}
+        go={go}
+        setGo={setGo}
+        cells={cells}
     />)}
         </div> 
         <p>{message}</p> 
