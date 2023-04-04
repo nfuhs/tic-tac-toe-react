@@ -1,4 +1,4 @@
-const Cell = ({ id , cell, setCells, go, setGo, cells }) => {
+const Cell = ({ id , cell, setCells, go, setGo, cells, winningMessage }) => {
     
     const handleClick = (e) => {
         const taken = e.target.firstChild.classList.contains("circle") ||
@@ -28,7 +28,7 @@ const Cell = ({ id , cell, setCells, go, setGo, cells }) => {
         }
         
         return ( 
-            <div className = "square" id={id} onClick={handleClick}></div>
+            <div className = "square" id={id} onClick={!winningMessage && handleClick}></div>
                 <div> className={cell}</div>
     ) 
 }
