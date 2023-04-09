@@ -29,7 +29,7 @@ const Cell = ({ id , cell, setCells, go, setGo, cells, winningMessage }) => {
         
         return ( 
             <div className = "square" id={id} onClick={!winningMessage && handleClick}></div>
-                <div> className={cell}</div>
+                <div className={cell}></div>
     ) 
 }
 

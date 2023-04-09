@@ -30,7 +30,7 @@ const App = () => {
                 return  
             }
         })
-    }
+    
     
     useEffect(() => {
         checkScore()
